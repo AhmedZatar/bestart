@@ -1,4 +1,9 @@
 
+var answer="yes";
+var youranswer=prompt("Please write yes to confirm you are not bot");
+while (answer !=youranswer.toLowerCase()){
+    youranswer=prompt("Please try again");
+}
 confirm("Welcome To The Art House");
 var name=prompt("What is your Name ?")
 var a=prompt("Do you like paint ?");
@@ -40,3 +45,7 @@ counter+=1;
 }
 
 avgOfRating(r1,r2,r3);
+
+for (var i=prompt("how many LEONARDO DA VINCI down the page you want ? "); parseInt(i)>=1;i-=1){
+        document.write('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png/220px-Francesco_Melzi_-_Portrait_of_Leonardo.png">');
+}
